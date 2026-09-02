@@ -1,0 +1,18 @@
+# Environment variables and secrets
+.env
+
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Test cache
+.pytest_cache/
+
+# Generated reports
+reports/*.html
+
+# Evaluation results
+data/results/
