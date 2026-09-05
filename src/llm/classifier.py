@@ -1,4 +1,5 @@
 import os
+from sys import version
 
 import yaml
 from dotenv import load_dotenv
@@ -51,11 +52,7 @@ def classify_email(
         # "crashing", so our CI pipeline can demonstrate that
         # a regression is detected.
         if version == "v2":
-
-            if any(
-                word in email_lower
-                for word in ["crashing", "upload", "slow"]
-            ):
+            if "crashing" in email_lower:
                 return ClassificationResult(
                     category="general",
                     summary="Customer has a general question or request.",
