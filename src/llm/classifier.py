@@ -10,9 +10,7 @@ from src.models.schema import ClassificationResult, PromptConfig
 load_dotenv()
 
 
-client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY")
-)
+
 
 
 def load_prompt_config(path: str) -> PromptConfig:
@@ -104,7 +102,11 @@ def classify_email(
             summary="Customer has a general question or request.",
         )
 
-    # Real LLM mode
+       # Real LLM mode
+    client = OpenAI(
+        api_key=os.getenv("OPENAI_API_KEY")
+    )
+
     messages = [
         {
             "role": "system",
