@@ -51,6 +51,7 @@ def classify_email(
         # "crashing", so our CI pipeline can demonstrate that
         # a regression is detected.
         if version == "v2":
+
             if "crashing" in email_lower:
                 return ClassificationResult(
                     category="general",
