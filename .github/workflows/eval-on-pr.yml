@@ -25,5 +25,6 @@ jobs:
         env:
           MOCK_LLM: "true"
         run: python -m src.evaluation.ci_check
-        - name: Run tests
-  run: python -m pytest
+
+      - name: Run tests
+        run: python -m pytest
