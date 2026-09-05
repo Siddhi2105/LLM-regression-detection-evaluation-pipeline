@@ -32,56 +32,61 @@ def classify_email(
 
     # Development mode: don't call the real LLM
     if os.getenv("MOCK_LLM", "false").lower() == "true":
+
         email_lower = email.lower()
         version = prompt_config.version
 
-        # Controlled v2 regression:
-        # In v2, deliberately misclassify the crashing case.
+        # Controlled v2 regressions for CI testing
         if version == "v2":
+
             if "crashing" in email_lower:
                 return ClassificationResult(
                     category="general",
                     summary="Customer has a general question or request.",
                 )
 
+           
+        # Billing
         if any(
-    word in email_lower
-    for word in [
-        "charged",
-        "payment",
-        "refund",
-        "invoice",
-        "subscription",
-        "declined",
-        "renew",
-        "card",
-    ]
-):
+            word in email_lower
+            for word in [
+                "charged",
+                "payment",
+                "refund",
+                "invoice",
+                "subscription",
+                "declined",
+                "renew",
+                "card",
+            ]
+        ):
             return ClassificationResult(
                 category="billing",
                 summary="Customer has a billing-related issue.",
             )
 
+        # Technical
         if any(
-    word in email_lower
-    for word in [
-        "crash",
-        "error",
-        "bug",
-        "not working",
-        "upload",
-        "slow",
-        "blank",
-        "export",
-        "button",
-        "stuck",
-    ]
-):
+            word in email_lower
+            for word in [
+                "crash",
+                "error",
+                "bug",
+                "not working",
+                "upload",
+                "slow",
+                "blank",
+                "export",
+                "button",
+                "stuck",
+            ]
+        ):
             return ClassificationResult(
                 category="technical",
                 summary="Customer has a technical issue.",
             )
 
+        # Account
         if any(
             word in email_lower
             for word in [
@@ -97,12 +102,13 @@ def classify_email(
                 summary="Customer has an account-related issue.",
             )
 
+        # General
         return ClassificationResult(
             category="general",
             summary="Customer has a general question or request.",
         )
 
-       # Real LLM mode
+    # Real LLM mode
     client = OpenAI(
         api_key=os.getenv("OPENAI_API_KEY")
     )
