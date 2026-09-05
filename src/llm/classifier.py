@@ -37,14 +37,17 @@ def classify_email(
         version = prompt_config.version
 
         # Controlled v2 regressions for CI testing
+               # Controlled v2 regressions for CI testing
         if version == "v2":
 
-            if "crashing" in email_lower:
+            if any(
+                word in email_lower
+                for word in ["crashing", "upload", "slow"]
+            ):
                 return ClassificationResult(
                     category="general",
                     summary="Customer has a general question or request.",
                 )
-
            
         # Billing
         if any(
