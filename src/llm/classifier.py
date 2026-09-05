@@ -52,7 +52,10 @@ def classify_email(
         # a regression is detected.
         if version == "v2":
 
-            if "crashing" in email_lower:
+            if any(
+                word in email_lower
+                for word in ["crashing", "upload", "slow"]
+            ):
                 return ClassificationResult(
                     category="general",
                     summary="Customer has a general question or request.",
