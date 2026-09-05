@@ -1,4 +1,5 @@
 import os
+from sys import version
 
 import yaml
 from dotenv import load_dotenv
@@ -38,16 +39,13 @@ def classify_email(
 
         # Controlled v2 regressions for CI testing
                # Controlled v2 regressions for CI testing
+        # Controlled v2 regression for CI testing
         if version == "v2":
-
-            if any(
-                word in email_lower
-                for word in ["crashing", "upload", "slow"]
-            ):
+            if "crashing" in email_lower:
                 return ClassificationResult(
                     category="general",
                     summary="Customer has a general question or request.",
-                )
+                    )
            
         # Billing
         if any(
