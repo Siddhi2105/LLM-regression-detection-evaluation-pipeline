@@ -32,6 +32,61 @@ def classify_email(
     prompt_config: PromptConfig,
 ) -> ClassificationResult:
 
+    # Development mode: don't call the real LLM
+    if os.getenv("MOCK_LLM", "false").lower() == "true":
+        email_lower = email.lower()
+
+        if any(
+            word in email_lower
+            for word in [
+                "charged",
+                "payment",
+                "refund",
+                "invoice",
+                "subscription",
+            ]
+        ):
+            return ClassificationResult(
+                category="billing",
+                summary="Customer has a billing-related issue.",
+            )
+
+        if any(
+            word in email_lower
+            for word in [
+                "crash",
+                "error",
+                "bug",
+                "not working",
+                "upload",
+            ]
+        ):
+            return ClassificationResult(
+                category="technical",
+                summary="Customer has a technical issue.",
+            )
+
+        if any(
+            word in email_lower
+            for word in [
+                "password",
+                "login",
+                "log in",
+                "account",
+                "profile",
+            ]
+        ):
+            return ClassificationResult(
+                category="account",
+                summary="Customer has an account-related issue.",
+            )
+
+        return ClassificationResult(
+            category="general",
+            summary="Customer has a general question or request.",
+        )
+
+    # Real LLM mode
     messages = [
         {
             "role": "system",
