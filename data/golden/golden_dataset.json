@@ -1,0 +1,125 @@
+[
+  {
+    "id": "001",
+    "email": "I was charged twice for my subscription.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged twice for their subscription."
+  },
+  {
+    "id": "002",
+    "email": "I cancelled my plan but I was still charged.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged after cancelling their plan."
+  },
+  {
+    "id": "003",
+    "email": "Why is my invoice higher this month?",
+    "expected_category": "billing",
+    "expected_summary": "Customer is asking why their invoice is higher than usual."
+  },
+  {
+    "id": "004",
+    "email": "I accidentally paid for the yearly plan. Can I get a refund?",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants a refund for an accidental yearly plan purchase."
+  },
+  {
+    "id": "005",
+    "email": "My card keeps getting declined when I try to renew.",
+    "expected_category": "billing",
+    "expected_summary": "Customer cannot renew because their card is being declined."
+  },
+
+  {
+    "id": "006",
+    "email": "The app keeps crashing when I open it.",
+    "expected_category": "technical",
+    "expected_summary": "Customer says the app crashes when opened."
+  },
+  {
+    "id": "007",
+    "email": "I can't upload any files. It just gets stuck.",
+    "expected_category": "technical",
+    "expected_summary": "Customer cannot upload files because the upload gets stuck."
+  },
+  {
+    "id": "008",
+    "email": "The dashboard is really slow today.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that the dashboard is running slowly."
+  },
+  {
+    "id": "009",
+    "email": "The reports page is blank when I open it.",
+    "expected_category": "technical",
+    "expected_summary": "Customer sees a blank page when opening reports."
+  },
+  {
+    "id": "010",
+    "email": "The export button isn't doing anything.",
+    "expected_category": "technical",
+    "expected_summary": "Customer says the export button is not working."
+  },
+
+  {
+    "id": "011",
+    "email": "I forgot my password and can't get into my account.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot access their account because they forgot their password."
+  },
+  {
+    "id": "012",
+    "email": "How do I change the email on my account?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to change their account email address."
+  },
+  {
+    "id": "013",
+    "email": "My account is locked. How can I get back in?",
+    "expected_category": "account",
+    "expected_summary": "Customer's account is locked and they want to regain access."
+  },
+  {
+    "id": "014",
+    "email": "I changed my name but it isn't updating on my profile.",
+    "expected_category": "account",
+    "expected_summary": "Customer's profile name is not updating."
+  },
+  {
+    "id": "015",
+    "email": "My password works on my phone but I can't log in on my laptop.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot log in from their laptop even though the password works elsewhere."
+  },
+
+  {
+    "id": "016",
+    "email": "What plans do you have?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking about the available plans."
+  },
+  {
+    "id": "017",
+    "email": "Are you open on weekends?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking about weekend support availability."
+  },
+  {
+    "id": "018",
+    "email": "Do you have any tutorials for new users?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking whether tutorials are available."
+  },
+  {
+    "id": "019",
+    "email": "Where can I see what the product includes?",
+    "expected_category": "general",
+    "expected_summary": "Customer wants information about the product features."
+  },
+  {
+    "id": "020",
+    "email": "I can't get into my account and there's a payment I don't recognize.",
+    "expected_category": "account",
+    "expected_summary": "Customer is concerned about possible unauthorized access to their account."
+  }
+]

@@ -35,32 +35,50 @@ def classify_email(
     # Development mode: don't call the real LLM
     if os.getenv("MOCK_LLM", "false").lower() == "true":
         email_lower = email.lower()
+        version = prompt_config.version
+
+        # Controlled v2 regression:
+        # In v2, deliberately misclassify the crashing case.
+        if version == "v2":
+            if "crashing" in email_lower:
+                return ClassificationResult(
+                    category="general",
+                    summary="Customer has a general question or request.",
+                )
 
         if any(
-            word in email_lower
-            for word in [
-                "charged",
-                "payment",
-                "refund",
-                "invoice",
-                "subscription",
-            ]
-        ):
+    word in email_lower
+    for word in [
+        "charged",
+        "payment",
+        "refund",
+        "invoice",
+        "subscription",
+        "declined",
+        "renew",
+        "card",
+    ]
+):
             return ClassificationResult(
                 category="billing",
                 summary="Customer has a billing-related issue.",
             )
 
         if any(
-            word in email_lower
-            for word in [
-                "crash",
-                "error",
-                "bug",
-                "not working",
-                "upload",
-            ]
-        ):
+    word in email_lower
+    for word in [
+        "crash",
+        "error",
+        "bug",
+        "not working",
+        "upload",
+        "slow",
+        "blank",
+        "export",
+        "button",
+        "stuck",
+    ]
+):
             return ClassificationResult(
                 category="technical",
                 summary="Customer has a technical issue.",
