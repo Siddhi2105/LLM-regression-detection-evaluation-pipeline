@@ -3380,7 +3380,7 @@ document.addEventListener(
 if __name__ == "__main__":
 
     old_result_path = (
-        "data/results/run_v1_20260905.json"
+        "data/results/run_v1_20260906.json"
     )
 
     new_result_path = (
@@ -3425,7 +3425,9 @@ if __name__ == "__main__":
     # --------------------------------------------------------
     # COMPARE RUNS
     # --------------------------------------------------------
-
+    print("DEBUG v1 accuracy:", v1["accuracy"])
+    print("DEBUG v2 accuracy:", v2["accuracy"])
+    print("DEBUG comparison:", compare_runs(v1, v2))
     comparison = compare_runs(
         v1,
         v2

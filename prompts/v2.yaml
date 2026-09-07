@@ -45,3 +45,4 @@ few_shot_examples:
     output:
       category: "general"
       summary: "Customer is asking about customer support operating hours."
+
