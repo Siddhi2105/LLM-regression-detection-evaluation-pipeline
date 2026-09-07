@@ -1,8 +1,8 @@
-LLM Regression Detection & Evaluation Pipeline
+# LLM Regression Detection & Evaluation Pipeline
 
 An automated CI/CD pipeline that tests LLM prompt changes against a golden dataset and detects quality regressions before deployment.
 
-What it does
+## What it does
 
 - Evaluates LLM outputs on a fixed golden dataset
 - Measures accuracy and error rate
@@ -11,46 +11,79 @@ What it does
 - Classifies results as PASS, WARNING, or CRITICAL
 - Runs automatically through GitHub Actions
 - Generates HTML evaluation reports
-- Includes multi-run drift detection
+- Detects performance drift across multiple evaluation runs
 
-Tech Stack
+## Tech Stack
 
 Python · OpenAI API · Pydantic · PyYAML · Pytest · GitHub Actions · Docker · Slack
 
-Project Structure
+## Project Structure
 
+```text
 LLM-regression-detection-evaluation-pipeline/
-├── .github/workflows/
-│   └── eval-on-pr.yml
+│
+├── .github/
+│   └── workflows/
+│       └── eval-on-pr.yml
+│
 ├── prompts/
 │   ├── v1.yaml
 │   └── v2.yaml
-├── data/golden/
-│   └── golden_dataset.json
+│
+├── data/
+│   ├── golden/
+│   │   └── golden_dataset.json
+│   └── results/
+│
 ├── src/
 │   ├── llm/
+│   │   └── classifier.py
+│   │
+│   ├── models/
+│   │   └── schema.py
+│   │
 │   ├── evaluation/
+│   │   ├── runner.py
+│   │   ├── scorer.py
+│   │   ├── diff.py
+│   │   └── ci_check.py
+│   │
 │   ├── reporting/
+│   │   └── html_report.py
+│   │
 │   └── alerting/
+│       ├── slack.py
+│       └── drift.py
+│
 ├── tests/
 │   └── test_diff_engine.py
+│
+├── .env.example
+├── .gitignore
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
+````
 
-Example
+## Example
 
+```text
 Baseline (v1):   95% accuracy
 Candidate (v2):  90% accuracy
 Change:          -5%
 Result:          REGRESSION — WARNING
+```
 
-Key Idea
+## Key Idea
 
 Treat LLM prompt changes like software changes: evaluate, compare, and catch regressions before they reach production.
 
-Run
+## Run
 
+```bash
 pip install -r requirements.txt
 python -m src.evaluation.ci_check
 python -m pytest
+```
+
+```
