@@ -3,7 +3,7 @@ name: LLM Regression Evaluation
 on:
   pull_request:
     paths:
-      - "prompts/**"
+     
 
 jobs:
   evaluate:
@@ -28,3 +28,4 @@ jobs:
 
       - name: Run tests
         run: python -m pytest
+        
