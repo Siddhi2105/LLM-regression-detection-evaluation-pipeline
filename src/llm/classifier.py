@@ -1,5 +1,4 @@
 import os
-from sys import version
 
 import yaml
 from dotenv import load_dotenv
