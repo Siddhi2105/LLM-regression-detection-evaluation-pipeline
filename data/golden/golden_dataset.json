@@ -29,7 +29,6 @@
     "expected_category": "billing",
     "expected_summary": "Customer cannot renew because their card is being declined."
   },
-
   {
     "id": "006",
     "email": "The app keeps crashing when I open it.",
@@ -60,7 +59,6 @@
     "expected_category": "technical",
     "expected_summary": "Customer says the export button is not working."
   },
-
   {
     "id": "011",
     "email": "I forgot my password and can't get into my account.",
@@ -91,7 +89,6 @@
     "expected_category": "account",
     "expected_summary": "Customer cannot log in from their laptop even though the password works elsewhere."
   },
-
   {
     "id": "016",
     "email": "What plans do you have?",
@@ -121,5 +118,485 @@
     "email": "I can't get into my account and there's a payment I don't recognize.",
     "expected_category": "account",
     "expected_summary": "Customer is concerned about possible unauthorized access to their account."
+  },
+  {
+    "id": "021",
+    "email": "I was charged for the same month twice.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports a duplicate monthly charge."
+  },
+  {
+    "id": "022",
+    "email": "Can you explain this charge on my invoice?",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants an explanation for a charge on their invoice."
+  },
+  {
+    "id": "023",
+    "email": "I need to update the card I use for my subscription.",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants to update the card used for their subscription."
+  },
+  {
+    "id": "024",
+    "email": "My refund hasn't arrived yet.",
+    "expected_category": "billing",
+    "expected_summary": "Customer is waiting for a refund to arrive."
+  },
+  {
+    "id": "025",
+    "email": "I don't want to renew my current plan.",
+    "expected_category": "billing",
+    "expected_summary": "Customer does not want their current plan to renew."
+  },
+  {
+    "id": "026",
+    "email": "Why did the price of my subscription change?",
+    "expected_category": "billing",
+    "expected_summary": "Customer is asking why their subscription price changed."
+  },
+  {
+    "id": "027",
+    "email": "The payment failed when I tried to check out.",
+    "expected_category": "billing",
+    "expected_summary": "Customer's payment failed during checkout."
+  },
+  {
+    "id": "028",
+    "email": "I was billed after my free trial ended. Is that correct?",
+    "expected_category": "billing",
+    "expected_summary": "Customer is asking about a charge after their free trial."
+  },
+  {
+    "id": "029",
+    "email": "Can I switch from monthly billing to yearly billing?",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants to change from monthly to yearly billing."
+  },
+  {
+    "id": "030",
+    "email": "There is a charge on my card that I don't remember making.",
+    "expected_category": "billing",
+    "expected_summary": "Customer does not recognize a charge on their card."
+  },
+  {
+    "id": "031",
+    "email": "I was charged even though my subscription should have ended.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged after their subscription should have ended."
+  },
+  {
+    "id": "032",
+    "email": "Can I get an invoice for my last payment?",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants an invoice for their last payment."
+  },
+  {
+    "id": "033",
+    "email": "The tax amount on my invoice looks wrong.",
+    "expected_category": "billing",
+    "expected_summary": "Customer believes the tax amount on their invoice is incorrect."
+  },
+  {
+    "id": "034",
+    "email": "My renewal went through but I don't see the new plan yet.",
+    "expected_category": "billing",
+    "expected_summary": "Customer's renewal was charged but the new plan is not showing."
+  },
+  {
+    "id": "035",
+    "email": "I need a refund for a subscription I bought by mistake.",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants a refund for a subscription purchased by mistake."
+  },
+  {
+    "id": "036",
+    "email": "Can I pay for the plan with a different card?",
+    "expected_category": "billing",
+    "expected_summary": "Customer wants to use a different card for payment."
+  },
+  {
+    "id": "037",
+    "email": "The app shows an error whenever I save a report.",
+    "expected_category": "technical",
+    "expected_summary": "Customer receives an error when saving a report."
+  },
+  {
+    "id": "038",
+    "email": "The website keeps freezing when I use the search box.",
+    "expected_category": "technical",
+    "expected_summary": "Customer says the website freezes while using search."
+  },
+  {
+    "id": "039",
+    "email": "My file upload fails every time.",
+    "expected_category": "technical",
+    "expected_summary": "Customer cannot upload files successfully."
+  },
+  {
+    "id": "040",
+    "email": "The page takes forever to load.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that a page is taking too long to load."
+  },
+  {
+    "id": "041",
+    "email": "The download button stopped working.",
+    "expected_category": "technical",
+    "expected_summary": "Customer says the download button is not working."
+  },
+  {
+    "id": "042",
+    "email": "I get an error when I try to export my data.",
+    "expected_category": "technical",
+    "expected_summary": "Customer receives an error while exporting data."
+  },
+  {
+    "id": "043",
+    "email": "The dashboard won't load on my computer.",
+    "expected_category": "technical",
+    "expected_summary": "Customer cannot load the dashboard on their computer."
+  },
+  {
+    "id": "044",
+    "email": "The search results are not showing up.",
+    "expected_category": "technical",
+    "expected_summary": "Customer cannot see search results."
+  },
+  {
+    "id": "045",
+    "email": "The app became very slow after the latest update.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that the app became slow after an update."
+  },
+  {
+    "id": "046",
+    "email": "I can't open the reports section.",
+    "expected_category": "technical",
+    "expected_summary": "Customer cannot open the reports section."
+  },
+  {
+    "id": "047",
+    "email": "The upload reaches 90 percent and then stops.",
+    "expected_category": "technical",
+    "expected_summary": "Customer's file upload stops before completing."
+  },
+  {
+    "id": "048",
+    "email": "The screen goes blank after I click save.",
+    "expected_category": "technical",
+    "expected_summary": "Customer sees a blank screen after clicking save."
+  },
+  {
+    "id": "049",
+    "email": "One of the buttons on the settings page does nothing.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that a settings button does not work."
+  },
+  {
+    "id": "050",
+    "email": "The application freezes when I try to export a report.",
+    "expected_category": "technical",
+    "expected_summary": "Customer's application freezes while exporting a report."
+  },
+  {
+    "id": "051",
+    "email": "I keep getting an error when opening the dashboard.",
+    "expected_category": "technical",
+    "expected_summary": "Customer receives an error when opening the dashboard."
+  },
+  {
+    "id": "052",
+    "email": "The file I uploaded never finishes processing.",
+    "expected_category": "technical",
+    "expected_summary": "Customer's uploaded file never finishes processing."
+  },
+  {
+    "id": "053",
+    "email": "The reports take several minutes to appear.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that reports take too long to appear."
+  },
+  {
+    "id": "054",
+    "email": "The application is stuck on the loading screen.",
+    "expected_category": "technical",
+    "expected_summary": "Customer's application is stuck on the loading screen."
+  },
+  {
+    "id": "055",
+    "email": "I can't reset my password.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot reset their password."
+  },
+  {
+    "id": "056",
+    "email": "How can I change my profile picture?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to change their profile picture."
+  },
+  {
+    "id": "057",
+    "email": "I entered the wrong email when I created my account.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to correct the email associated with their account."
+  },
+  {
+    "id": "058",
+    "email": "Someone may have accessed my account.",
+    "expected_category": "account",
+    "expected_summary": "Customer is concerned about possible unauthorized account access."
+  },
+  {
+    "id": "059",
+    "email": "I can't remember which email I used for my account.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot remember the email associated with their account."
+  },
+  {
+    "id": "060",
+    "email": "How do I update my phone number?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to update their phone number."
+  },
+  {
+    "id": "061",
+    "email": "My account has been locked after too many attempts.",
+    "expected_category": "account",
+    "expected_summary": "Customer's account was locked after too many login attempts."
+  },
+  {
+    "id": "062",
+    "email": "I want to change my password.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to change their password."
+  },
+  {
+    "id": "063",
+    "email": "My profile information is outdated.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to update outdated profile information."
+  },
+  {
+    "id": "064",
+    "email": "I can't sign in even though I know my password is correct.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot sign in despite having the correct password."
+  },
+  {
+    "id": "065",
+    "email": "How do I remove an old phone number from my account?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to remove an old phone number from their account."
+  },
+  {
+    "id": "066",
+    "email": "I need to update the name on my profile.",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to update the name on their profile."
+  },
+  {
+    "id": "067",
+    "email": "I received an alert about a login I don't recognize.",
+    "expected_category": "account",
+    "expected_summary": "Customer received an alert about an unrecognized login."
+  },
+  {
+    "id": "068",
+    "email": "I am unable to access my account after changing my password.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot access their account after changing their password."
+  },
+  {
+    "id": "069",
+    "email": "Can I use a different email address for my account?",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to use a different email address for their account."
+  },
+  {
+    "id": "070",
+    "email": "Where do I change my account settings?",
+    "expected_category": "account",
+    "expected_summary": "Customer is asking where to change account settings."
+  },
+  {
+    "id": "071",
+    "email": "What features are included in the product?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking which features are included in the product."
+  },
+  {
+    "id": "072",
+    "email": "Do you offer support outside business hours?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking about support outside business hours."
+  },
+  {
+    "id": "073",
+    "email": "Where can I find your documentation?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking where to find the documentation."
+  },
+  {
+    "id": "074",
+    "email": "Is there a guide for getting started?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking whether a getting-started guide is available."
+  },
+  {
+    "id": "075",
+    "email": "What does your service include?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking what the service includes."
+  },
+  {
+    "id": "076",
+    "email": "How can I contact customer support?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking how to contact customer support."
+  },
+  {
+    "id": "077",
+    "email": "Do you have a mobile app?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking whether a mobile app is available."
+  },
+  {
+    "id": "078",
+    "email": "Can you tell me more about the service?",
+    "expected_category": "general",
+    "expected_summary": "Customer wants more information about the service."
+  },
+  {
+    "id": "079",
+    "email": "Where can I learn more about the different plans?",
+    "expected_category": "general",
+    "expected_summary": "Customer wants more information about the available plans."
+  },
+  {
+    "id": "080",
+    "email": "Do you provide training for new customers?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking whether training is available for new customers."
+  },
+  {
+    "id": "081",
+    "email": "What are your support hours during holidays?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking about support hours during holidays."
+  },
+  {
+    "id": "082",
+    "email": "Is there a limit on how many users we can have?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking about the user limit."
+  },
+  {
+    "id": "083",
+    "email": "Where can I read about the product?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking where to find product information."
+  },
+  {
+    "id": "084",
+    "email": "Do you have examples showing how the service works?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking for examples of how the service works."
+  },
+  {
+    "id": "085",
+    "email": "Can I speak with someone about the different options?",
+    "expected_category": "general",
+    "expected_summary": "Customer wants to discuss the available options."
+  },
+  {
+    "id": "086",
+    "email": "I forgot my password but I also see an unfamiliar charge.",
+    "expected_category": "account",
+    "expected_summary": "Customer is concerned about account access and an unfamiliar charge."
+  },
+  {
+    "id": "087",
+    "email": "The app is slow when I try to view my profile.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that the app is slow while viewing their profile."
+  },
+  {
+    "id": "088",
+    "email": "I want to know whether the yearly plan includes all features.",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking what features are included with the yearly plan."
+  },
+  {
+    "id": "089",
+    "email": "My payment went through but the page shows an error.",
+    "expected_category": "technical",
+    "expected_summary": "Customer's payment succeeded but the page displays an error."
+  },
+  {
+    "id": "090",
+    "email": "I can't log in because the page keeps showing a blank screen.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot log in because the login page is blank."
+  },
+  {
+    "id": "091",
+    "email": "Can I get a refund if I no longer need the service?",
+    "expected_category": "billing",
+    "expected_summary": "Customer is asking whether they can receive a refund."
+  },
+  {
+    "id": "092",
+    "email": "The export worked yesterday but fails today.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that data export has stopped working."
+  },
+  {
+    "id": "093",
+    "email": "Someone changed the email address on my account without my permission.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports an unauthorized change to their account email."
+  },
+  {
+    "id": "094",
+    "email": "What is the difference between your plans?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking about the differences between available plans."
+  },
+  {
+    "id": "095",
+    "email": "I was charged for an add-on that I didn't purchase.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged for an add-on they did not purchase."
+  },
+  {
+    "id": "096",
+    "email": "The dashboard loads, but none of the data appears.",
+    "expected_category": "technical",
+    "expected_summary": "Customer says the dashboard loads without displaying data."
+  },
+  {
+    "id": "097",
+    "email": "I need to regain access to my account after losing my phone.",
+    "expected_category": "account",
+    "expected_summary": "Customer needs to regain account access after losing their phone."
+  },
+  {
+    "id": "098",
+    "email": "Do you have any recommendations for new users?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking for recommendations for new users."
+  },
+  {
+    "id": "099",
+    "email": "My card was charged but the subscription still says inactive.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged but their subscription still appears inactive."
+  },
+  {
+    "id": "100",
+    "email": "I can log in, but the reports page crashes whenever I open it.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that the reports page crashes when opened."
   }
 ]
